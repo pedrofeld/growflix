@@ -7,8 +7,8 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw; /* 100% da viewport */
-    min-height: 90vh;
+    width: 100vw;
+    min-height: 70vh;
 }
 
 .btn-red {
@@ -37,7 +37,7 @@ html, body {
 
 .gray-hr {
     border: 0;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 3px solid #929496;
     margin: 1rem 0;
 }
 
@@ -60,4 +60,14 @@ html, body {
 
 .accordion-button:not(.collapsed) .accordion-icon {
     transform: rotate(-360deg);
+}
+
+.accordion-button {
+    font-size: 1.50rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.accordion-item {
+    max-width: 800px;
+    margin: auto;
 }
