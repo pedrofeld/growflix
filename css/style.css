@@ -7,8 +7,8 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 140px;
     width: 100vw;
-    min-height: 70vh;
 }
 
 .btn-red {
@@ -39,6 +39,10 @@ html, body {
     border: 0;
     border-bottom: 3px solid #929496;
     margin: 1rem 0;
+}
+
+.div-section{
+    max-width: 500px;
 }
 
 .accordion-button::after {
