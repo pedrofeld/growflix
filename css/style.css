@@ -5,9 +5,7 @@ html, body {
 .banner{
     background-image: url("/assets/images/banner-initial.png");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    padding: 140px;
     width: 100vw;
 }
 
@@ -91,4 +89,21 @@ html, body {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23929ba3' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.header-bg{
+    background-image: url('/assets/images/growcast-01.png');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo{
+    padding-left: 10px !important;
+    padding-top: 10px !important;
+}
+
+.content{
+    padding-left: 5vw;
 }
