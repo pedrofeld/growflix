@@ -7,6 +7,12 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
+    height: 650px;
+}
+
+.header-components{
+    padding-top: 95px;
+    margin-bottom: 20px;
 }
 
 .btn-red {
