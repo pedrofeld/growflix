@@ -102,14 +102,22 @@ html, body {
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.logo{
-    padding-left: 10px !important;
-    padding-top: 10px !important;
+    height: 750px;
+    position: relative;
 }
 
 .content{
-    padding-left: 5vw;
+    position: absolute;
+    left: 18%;
+    top: 63%;
+}
+
+.icon-white{
+    filter: brightness(0) invert(1);
+}
+
+.episodios, .webinar, 
+.jornada, .diversos {
+    padding-left: 15%;
+    font-size: 20px;
 }
