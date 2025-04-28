@@ -116,7 +116,7 @@ html, body {
     filter: brightness(0) invert(1);
 }
 
-.episodios, .webinar, 
+.growcast, .webinar, 
 .jornada, .diversos {
     padding-left: 15%;
     font-size: 20px;
