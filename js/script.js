@@ -133,14 +133,14 @@ const movies = [
     },
     {
         img: "https://img.youtube.com/vi/cQDQNX6NXYo/sddefault.jpg",
-        title: "Title",
+        title: "Onde trabalhar com qualidade de software? Conheça a Testing Company, empresa parceira da Growdev",
         link: "https://www.youtube.com/embed/cQDQNX6NXYo",
         category: "Diversos",
     },
     {
-        img: "https://img.youtube.com/vi/id/sddefault.jpg",
-        title: "Onde trabalhar com qualidade de software? Conheça a Testing Company, empresa parceira da Growdev",
-        link: "https://www.youtube.com/embed/id",
+        img: "https://img.youtube.com/vi/nKGbolkirBM/sddefault.jpg",
+        title: "WEBINAR ANALISTA DE DADOS - com Paulo Marcon da Arezzo&Co",
+        link: "https://www.youtube.com/embed/nKGbolkirBM",
         category: "Diversos",
     },
     {
