@@ -119,5 +119,34 @@ const movies = [
         link: "https://www.youtube.com/embed/-26aqPtgoEY",
         category: "UX/UI",
     },
-    //...
+    {
+        img: "https://youtube.com/vi/QsuhYgsSYQo/sddefault.jpg",
+        title: "Célula de talentos - Uma solução Growdev",
+        link: "https://www.youtube.com/embed/QsuhYgsSYQo",
+        category: "Diversos",
+    },
+    {
+        img: "https://youtube.com/vi/ouDn8z3PSqs/sddefault.jpg",
+        title: "Como é o dia a dia de um dev? Live Growdev com Marcelo Eltz",
+        link: "https://www.youtube.com/embed/ouDn8z3PSqs",
+        category: "Diversos",
+    },
+    {
+        img: "https://youtube.com/vi/cQDQNX6NXYo/sddefault.jpg",
+        title: "Title",
+        link: "https://www.youtube.com/embed/cQDQNX6NXYo",
+        category: "Diversos",
+    },
+    {
+        img: "https://youtube.com/vi/id/sddefault.jpg",
+        title: "Onde trabalhar com qualidade de software? Conheça a Testing Company, empresa parceira da Growdev",
+        link: "https://www.youtube.com/embed/id",
+        category: "Diversos",
+    },
+    {
+        img: "https://youtube.com/vi/6sZPsqNjeek/sddefault.jpg",
+        title: "Tecnologia trazendo soluções para a Arezzo & CO | Ricardo Pinho",
+        link: "https://www.youtube.com/embed/6sZPsqNjeek",
+        category: "Diversos",
+    }
 ];
