@@ -89,5 +89,35 @@ const movies = [
         link: "https://www.youtube.com/embed/L1pKoMC6hWk",
         category: "Webinar",
     },
+    {
+        img: "https://youtube.com/vi/FiZMowbaiJA/sddefault.jpg",
+        title: "Live #5 Jornada UX/UI: O UX/UI Design é para todos?",
+        link: "https://www.youtube.com/embed/FiZMowbaiJA",
+        category: "UX/UI",
+    },
+    {
+        img: "https://youtube.com/vi/cwqDu0ZzbYE/sddefault.jpg",
+        title: "Live #4 Jornada UX/UI: Como migrar para o UX/UI Design: a trajetória de uma designer - Growdev",
+        link: "https://www.youtube.com/embed/cwqDu0ZzbYE",
+        category: "UX/UI",
+    },
+    {
+        img: "https://youtube.com/vi/ZMZjQ9aRuIY/sddefault.jpg",
+        title: "Live #3 Jornada UX/UI: As oportunidades de estudar um programa de formação pagando após formado",
+        link: "https://www.youtube.com/embed/ZMZjQ9aRuIY",
+        category: "UX/UI",
+    },
+    {
+        img: "https://youtube.com/vi/8sd3wuKTZMA/sddefault.jpg",
+        title: "Live #2 Jornada UX/UI: O profissional de UX/UI Design no mercado digital - Growdev",
+        link: "https://www.youtube.com/embed/8sd3wuKTZMA",
+        category: "UX/UI",
+    },
+    {
+        img: "https://youtube.com/vi/-26aqPtgoEY/sddefault.jpg",
+        title: "Live #1 Jornada UX/UI: O papel do UX/UI Designer no desenvolvimento de um produto digital - Growdev",
+        link: "https://www.youtube.com/embed/-26aqPtgoEY",
+        category: "UX/UI",
+    },
     //...
 ];
