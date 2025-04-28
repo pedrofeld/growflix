@@ -59,5 +59,35 @@ const movies = [
         link: "https://www.youtube.com/embed/dfDgs0Ive2Q",
         category: "Growcast",
     },
+    {
+        img: "https://youtube.com/vi/WKbLXuP9S-c/sddefault.jpg",
+        title: "Webinar - Recriando a interface do Linkedin com Flutter",
+        link: "https://www.youtube.com/embed/WKbLXuP9S-c",
+        category: "Webinar",
+    },
+    {
+        img: "https://youtube.com/vi/dJ6y1zMjVXU/sddefault.jpg",
+        title: "Webinar - Recriando a interface do Instagram com Flutter",
+        link: "https://www.youtube.com/embed/dJ6y1zMjVXU",
+        category: "Webinar",
+    },
+    {
+        img: "https://youtube.com/vi/8rdJsqUjsGg/sddefault.jpg",
+        title: "Webinar - Recriando a interface do iFood com Flutter",
+        link: "https://www.youtube.com/embed/8rdJsqUjsGg",
+        category: "Webinar",
+    },
+    {
+        img: "https://youtube.com/vi/C4p_7qBsECw/sddefault.jpg",
+        title: "Webinar - Recriando a interface do PicPay com Flutter",
+        link: "https://www.youtube.com/embed/C4p_7qBsECw",
+        category: "Webinar",
+    },
+    {
+        img: "https://youtube.com/vi/L1pKoMC6hWk/sddefault.jpg",
+        title: "Webinar - Recriando o layout do WhatsApp com Flutter",
+        link: "https://www.youtube.com/embed/L1pKoMC6hWk",
+        category: "Webinar",
+    },
     //...
 ];
