@@ -169,9 +169,9 @@ movies.forEach(movie => {
             <div class="video-card">
                 <img src="${movie.img}" alt="${movie.title}" class="img-fluid">
                 <div class="video-caption">
-                    <div class="video-title">${movie.title}</div>
-                    <a href="${movie.link}" target="_blank">
-                        <img src="./assets/libs/bootstrap-icons-1.11.3/play-fill.svg" alt="Play button" class="btn img-fluid">
+                    <a href="#" onclick="openIframe('${movie.link}'); return false;">
+                        <img src="./assets/libs/bootstrap-icons-1.11.3/play-circle.svg" alt="Play button" class="btn btn-img icon-white">
+                        <div class="video-title">${movie.title}</div>
                     </a>
                 </div>
             </div>
@@ -180,3 +180,16 @@ movies.forEach(movie => {
         container.innerHTML += videoHtml;
     }
 });
+
+function openIframe(videoLink) {
+    const existingIframe = document.querySelector('iframe');
+    if (existingIframe) {
+        existingIframe.remove();
+    }
+
+    const iframeContainer = document.createElement('div');
+    iframeContainer.innerHTML = `
+        <iframe width="560" height="315" src="${movie.link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `;
+    document.body.appendChild(iframeContainer);
+}

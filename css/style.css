@@ -119,18 +119,69 @@ html, body {
 .growcast, .webinar, 
 .jornada, .diversos {
     padding-left: 15%;
+    padding-right: 15%;
+}
+
+.growcast > a:first-of-type,
+.webinar > a:first-of-type,
+.jornada > a:first-of-type,
+.diversos > a:first-of-type{
     font-size: 20px;
 }
 
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .video-card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
     transition: transform 0.3s ease;
 }
 
 .video-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 .video-caption {
-    color: #fff;
-    font-size: 18px;
+    display: none; 
+    position: relative; 
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 10px;
+    text-align: start;
+}
+
+.video-card:hover .video-caption {
+    display: block;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.btn-img{
+    width: 20%;
+    display: inline-block;
+}
+
+.video-title{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.video-title {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 12px;
 }
