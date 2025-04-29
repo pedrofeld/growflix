@@ -171,10 +171,8 @@ movies.forEach(movie => {
             <div class="video-card">
                 <img src="${movie.img}" alt="${movie.title}" class="img-fluid">
                 <div class="video-caption" onclick="openVideo('${movie.link}')">
-                    <img src="./assets/libs/bootstrap-icons-1.11.3/play-circle.svg" 
-                        alt="Play button" 
-                        class="btn btn-img icon-white">
-                    <div class="video-title">${movie.title}</div>
+                    <img src="./assets/libs/bootstrap-icons-1.11.3/play-circle.svg" alt="Play button" class="btn btn-img icon-white">
+                    <div class="video-title" onclick="openVideo('${movie.link}')">${movie.title}</div>
                 </div>
             </div>
         `;
