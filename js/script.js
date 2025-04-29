@@ -1,3 +1,5 @@
+const modalVideo = new bootstrap.Modal("#modalVideo");
+
 const movies = [
     {
         img: "https://img.youtube.com/vi/aJ-HZuLcKeA/sddefault.jpg",
@@ -166,13 +168,13 @@ movies.forEach(movie => {
         let videoHtml = '';
         
         videoHtml += `
-            <div class="video-card">
+            <div class="video-card" onclick="openVideo('${movie.link}')">
                 <img src="${movie.img}" alt="${movie.title}" class="img-fluid">
                 <div class="video-caption">
-                    <a href="#" onclick="openIframe('${movie.link}'); return false;">
-                        <img src="./assets/libs/bootstrap-icons-1.11.3/play-circle.svg" alt="Play button" class="btn btn-img icon-white">
-                        <div class="video-title">${movie.title}</div>
-                    </a>
+                    <img src="./assets/libs/bootstrap-icons-1.11.3/play-circle.svg" 
+                        alt="Play button" 
+                        class="btn btn-img icon-white">
+                    <div class="video-title">${movie.title}</div>
                 </div>
             </div>
         `;
@@ -181,15 +183,20 @@ movies.forEach(movie => {
     }
 });
 
-function openIframe(videoLink) {
-    const existingIframe = document.querySelector('iframe');
-    if (existingIframe) {
-        existingIframe.remove();
-    }
+const playButton = document.getElementsByClassName("video-card");
+playButton.addEventListener("click", () => openVideo(movie.link));
 
-    const iframeContainer = document.createElement('div');
-    iframeContainer.innerHTML = `
-        <iframe width="560" height="315" src="${movie.link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+function openVideo(video) {
+    const videoFrame = document.getElementById("video-frame");
+  
+    videoFrame.innerHTML = `
+      <iframe
+        src="${movie.link}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     `;
-    document.body.appendChild(iframeContainer);
+    modalVideo.show();
 }
