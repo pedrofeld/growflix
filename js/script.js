@@ -157,15 +157,26 @@ const categoryToId = {
     "UX/UI": "jornada",
     "Diversos": "diversos"
 };
-  
+
 movies.forEach(movie => {
     const sectionId = categoryToId[movie.category];
     const container = document.querySelector(`#${sectionId} .videos-container`);
-  
+
     if (container) {
-      container.innerHTML += `
-        <div class="card bg-black text-white mb-3" style="width: 18rem;">
-        <img src="${movie.img}" class="card-img-top" alt="Thumbnail">
-      `;
+        let videoHtml = '';
+        
+        videoHtml += `
+            <div class="video-card">
+                <img src="${movie.img}" alt="${movie.title}" class="img-fluid">
+                <div class="video-caption">
+                    <div class="video-title">${movie.title}</div>
+                    <a href="${movie.link}" target="_blank">
+                        <img src="./assets/libs/bootstrap-icons-1.11.3/play-fill.svg" alt="Play button" class="btn img-fluid">
+                    </a>
+                </div>
+            </div>
+        `;
+
+        container.innerHTML += videoHtml;
     }
 });

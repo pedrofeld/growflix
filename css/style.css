@@ -121,3 +121,16 @@ html, body {
     padding-left: 15%;
     font-size: 20px;
 }
+
+.video-card {
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+.video-caption {
+    color: #fff;
+    font-size: 18px;
+}
