@@ -183,20 +183,10 @@ movies.forEach(movie => {
     }
 });
 
-const playButton = document.getElementsByClassName("video-card");
-playButton.addEventListener("click", () => openVideo(movie.link));
-
-function openVideo(video) {
+function openVideo(videoLink) {
     const videoFrame = document.getElementById("video-frame");
   
-    videoFrame.innerHTML = `
-      <iframe
-        src="${movie.link}"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-    `;
+    videoFrame.src = videoLink;
+
     modalVideo.show();
 }
