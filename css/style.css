@@ -171,7 +171,6 @@ html, body {
 }
 
 .video-title {
-    color: white;
     font-size: 15px;
     flex: 1;
     word-wrap: break-word;
