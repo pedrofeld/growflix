@@ -176,10 +176,8 @@ html, body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
     margin: 0;
     text-align: left;
     line-height: 1.3;
@@ -187,4 +185,34 @@ html, body {
 
 .video-title:hover {
     cursor: pointer; 
+}
+
+#modalVideo .modal-dialog {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center
+}
+
+#modalVideo iframe {
+    width: 100%;
+    height: 75%;
+}
+
+#modalVideo.modal {
+    overflow-y: hidden;
+    padding-right: 0 !important;
+    margin: 0;
+}
+
+body.modal-open {
+    overflow-y: hidden;
+    padding-right: 0 !important;
+}
+
+#modalVideo .modal-body {
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
