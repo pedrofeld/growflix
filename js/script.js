@@ -165,9 +165,7 @@ movies.forEach(movie => {
     const container = document.querySelector(`#${sectionId} .videos-container`);
 
     if (container) {
-        let videoHtml = '';
-        
-        videoHtml += `
+        container.innerHTML += `
             <div class="video-card">
                 <img src="${movie.img}" alt="${movie.title}" class="img-fluid">
                 <div class="video-caption" onclick="openVideo('${movie.link}')">
@@ -176,15 +174,23 @@ movies.forEach(movie => {
                 </div>
             </div>
         `;
-
-        container.innerHTML += videoHtml;
     }
 });
 
-function openVideo(videoLink) {
+function openVideo(videoParam) {
     const videoFrame = document.getElementById("video-frame");
-  
-    videoFrame.src = videoLink;
-
-    modalVideo.show();
+    
+    if (typeof videoParam === 'number') {
+        // if the parameter is an index
+        if (videoParam >= 0 && videoParam < movies.length) {
+            videoFrame.src = movies[videoParam].link;
+            modalVideo.show();
+        } else {
+            console.error("Índice do vídeo inválido");
+        }
+    } else {
+        // if the parameter is a string (direct link)
+        videoFrame.src = videoParam;
+        modalVideo.show();
+    }
 }
