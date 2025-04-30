@@ -129,6 +129,17 @@ html, body {
     font-size: 20px;
 }
 
+.orange-hover:hover{
+    color: #e8742c !important;
+    filter: 
+        invert(48%)
+        sepia(90%)
+        saturate(1500%)
+        hue-rotate(350deg)
+        brightness(95%)
+        contrast(90%);
+}
+
 .videos-container {
     display: flex;
     flex-wrap: wrap;
