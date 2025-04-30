@@ -161,14 +161,20 @@ html, body {
 .video-caption {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 0;
     right: 0;
     background: black;
     padding: 10px;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     gap: 10px;
+    font-size: 14px;
+    flex: 1;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    margin: 0;
+    text-align: left;
 }
 
 .video-card:hover .video-caption {
@@ -176,26 +182,9 @@ html, body {
 }
 
 .btn-img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     flex-shrink: 0;
-}
-
-.video-title {
-    font-size: 15px;
-    flex: 1;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin: 0;
-    text-align: left;
-    line-height: 1.3;
-}
-
-.video-title:hover {
-    cursor: pointer; 
 }
 
 #modalVideo .modal-dialog {
