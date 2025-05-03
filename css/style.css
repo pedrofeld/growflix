@@ -118,8 +118,8 @@ html, body {
 
 .growcast, .webinar, 
 .jornada, .diversos {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .growcast > a:first-of-type,
