@@ -1,7 +1,6 @@
 <div align="center">
   <img src="/assets/images/logo-growflix.svg" alt="GrowFlix Logo" width="200"/>
 
-  <h1>GrowFlix 🎬</h1>
   <p>Uma landing page inspirada na Netflix, desenvolvida como desafio do curso Full Stack da Growdev.</p>
 </div>
 
