@@ -162,17 +162,19 @@ const categoryToId = {
 
 movies.forEach(movie => {
     const sectionId = categoryToId[movie.category];
-    const container = document.querySelector(`#${sectionId} .videos-container`);
+    const container = document.querySelector(`#${sectionId} .videos-container .row`);
 
     if (container) {
         container.innerHTML += `
-            <div class="video-card">
-                <img src="${movie.img}" alt="${movie.title}" class="img-fluid">
-                <div class="video-caption" onclick="openVideo('${movie.link}')">
-                    <a href="#" class="text-decoration-none text-white ">
-                        <img src="./assets/libs/bootstrap-icons-1.11.3/play-circle.svg" alt="Play button" class="btn btn-img icon-white">
-                        ${movie.title}
-                    </a>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="video-card">
+                    <img src="${movie.img}" alt="${movie.title}" class="img-fluid">
+                    <div class="video-caption" onclick="openVideo('${movie.link}')">
+                        <a href="#" class="text-decoration-none text-white">
+                            <img src="./assets/libs/bootstrap-icons-1.11.3/play-circle.svg" alt="Play button" class="btn btn-img icon-white">
+                            ${movie.title}
+                        </a>
+                    </div>
                 </div>
             </div>
         `;
